@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "64788172092",
+    "firebase_url": "https://dr-emergency-7b6f3.firebaseio.com",
+    "project_id": "dr-emergency-7b6f3",
+    "storage_bucket": "dr-emergency-7b6f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64788172092:android:509d87170e6b49bb",
+        "android_client_info": {
+          "package_name": "com.matrixdev.dremergenct"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64788172092-4s5j2grlceco37bd3e8vrj9giqbu0ncd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdZpCHuJOxF1GM-6cONvyw98Gb3OCKUMI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64788172092:android:ec3ccc61f5b0dfed",
+        "android_client_info": {
+          "package_name": "com.matrixdev.dremergency"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64788172092-4s5j2grlceco37bd3e8vrj9giqbu0ncd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdZpCHuJOxF1GM-6cONvyw98Gb3OCKUMI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

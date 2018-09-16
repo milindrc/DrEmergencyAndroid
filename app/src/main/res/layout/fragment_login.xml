@@ -1,0 +1,225 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.sdkhightech.gocardpro.Controllers.Authentication.LoginFragment">
+
+    <ScrollView
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/space_140_dip"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/space_10_dip">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/user_sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_15_dip"
+                    android:layout_marginStart="@dimen/space_15_dip"
+                    android:layout_marginTop="@dimen/space_15_dip"
+                    android:textColorHint="#4C5056"
+                    app:hintTextAppearance="@style/TextInputLayout">
+
+                    <EditText
+                        android:id="@+id/login_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Email / Mobile"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/user_password_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_15_dip"
+                    android:layout_marginStart="@dimen/space_15_dip"
+                    android:layout_marginTop="@dimen/space_20_dip"
+                    android:textColorHint="#4C5056"
+                    app:hintTextAppearance="@style/TextInputLayout"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Password"
+                        android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/need_help"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/space_15_dip"
+                    android:layout_marginStart="@dimen/space_15_dip"
+                    android:layout_marginTop="@dimen/space_15_dip"
+                    android:text="forgot password?"
+                    android:textColor="#0075B4"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_40_dip"
+                    android:layout_marginBottom="@dimen/space_1_dip"
+                    android:layout_marginEnd="@dimen/space_15_dip"
+                    android:layout_marginStart="@dimen/space_15_dip"
+                    android:layout_marginTop="@dimen/space_18_dip"
+                    android:background="@drawable/register_button"
+                    android:fontFamily="serif-lk"
+                    android:text="Sign In"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_15_dip"
+                    android:layout_marginStart="@dimen/space_15_dip"
+                    android:layout_marginTop="@dimen/space_10_dip"
+                    android:weightSum="2">
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/google_sign_in"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:buttonSize="icon_only"
+                        app:colorScheme="dark"></com.google.android.gms.common.SignInButton>
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_15_dip"
+                        android:layout_weight="1">
+
+
+                        <Button
+                            android:id="@+id/facebook_sign_in"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/com_facebook_button_background_color"
+                            android:gravity="center" />
+
+                        <ImageView
+                            android:scaleType="fitXY"
+                            android:elevation="@dimen/space_5_dip"
+                            android:layout_width="@dimen/space_20_dip"
+                            android:layout_height="@dimen/space_20_dip"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/com_facebook_button_icon" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_5_dip">
+
+                    <TextView
+                        android:id="@+id/mar_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="@dimen/space_10_dip"
+                        android:layout_marginLeft="@dimen/space_10_dip"
+                        android:layout_marginRight="@dimen/space_10_dip"
+                        android:layout_marginStart="@dimen/space_10_dip"
+                        android:text="Or"
+                        android:textColor="#4C5056" />
+
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1_dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_16_dip"
+                        android:layout_marginTop="@dimen/space_2_dip"
+                        android:layout_toLeftOf="@id/mar_right"
+                        android:background="#4C5056" />
+
+
+                    <View
+                        android:id="@+id/mar1_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_1_dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_16_dip"
+                        android:layout_marginTop="@dimen/space_2_dip"
+                        android:layout_toRightOf="@id/mar_right"
+                        android:background="#4C5056" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="@dimen/space_1_dip"
+                    android:layout_marginEnd="@dimen/space_15_dip"
+                    android:layout_marginStart="@dimen/space_15_dip"
+                    android:layout_marginTop="@dimen/space_18_dip"
+                    android:background="@drawable/register_button"
+                    android:fontFamily="serif-lk"
+                    android:text="Register"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/space_10_dip"
+                    android:layout_marginStart="@dimen/space_10_dip"
+                    android:layout_marginTop="@dimen/space_15_dip"
+                    android:text="@string/disclaimer_text1_register"
+                    android:textAlignment="center"
+                    android:textColor="#202020"
+                    android:textSize="11sp" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/space_1_dip"
+                    android:layout_marginBottom="@dimen/space_12_dip"
+                    android:layout_marginEnd="@dimen/space_10_dip"
+                    android:layout_marginStart="@dimen/space_10_dip"
+                    android:layout_marginTop="@dimen/space_10_dip"
+                    android:text="PM's Terms of service and Honor Code."
+                    android:textAlignment="center"
+                    android:textColor="#0075B4"
+                    android:textSize="11sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

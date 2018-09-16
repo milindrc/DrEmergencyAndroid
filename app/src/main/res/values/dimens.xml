@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="flexible_space_image_height">240dp</dimen>
+    <dimen name="image_margin">2dip</dimen>
+    <dimen name="nav_drawer_width">260dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+
+    <!-- Booking Screen Dimens -->
+    <dimen name="flexible_space_show_fab_offset">120dp</dimen>
+
+    <!-- Splash Screen Dimens -->
+    <dimen name="splash_error_text_size">14sp</dimen>
+
+    <!-- Spaces -->
+    <dimen name="space_1_dip">1dip</dimen>
+    <dimen name="space_2_dip">2dip</dimen>
+    <dimen name="space_3_dip">3dip</dimen>
+    <dimen name="space_4_dip">4dip</dimen>
+    <dimen name="space_5_dip">5dip</dimen>
+    <dimen name="space_6_dip">6dip</dimen>
+    <dimen name="space_7_dip">7dip</dimen>
+    <dimen name="space_8_dip">8dip</dimen>
+    <dimen name="space_9_dip">9dip</dimen>
+    <dimen name="space_10_dip">10dip</dimen>
+    <dimen name="space_12_dip">12dip</dimen>
+    <dimen name="space_13_dip">13dip</dimen>
+    <dimen name="space_15_dip">15dip</dimen>
+    <dimen name="space_16_dip">16dip</dimen>
+    <dimen name="space_17_dip">17dip</dimen>
+    <dimen name="space_18_dip">18dip</dimen>
+    <dimen name="space_19_dip">19dip</dimen>
+    <dimen name="space_20_dip">20dip</dimen>
+    <dimen name="space_22_dip">22dip</dimen>
+    <dimen name="space_24_dip">24dip</dimen>
+    <dimen name="space_25_dip">25dip</dimen>
+    <dimen name="space_28_dip">28dip</dimen>
+    <dimen name="space_30_dip">30dip</dimen>
+    <dimen name="space_35_dip">35dip</dimen>
+    <dimen name="space_36_dip">36dip</dimen>
+    <dimen name="space_40_dip">40dip</dimen>
+    <dimen name="space_42_dip">42dip</dimen>
+    <dimen name="space_50_dip">50dip</dimen>
+    <dimen name="space_60_dip">60dip</dimen>
+    <dimen name="space_61_dip">61dip</dimen>
+    <dimen name="space_65_dip">65dip</dimen>
+    <dimen name="space_70_dip">70dip</dimen>
+    <dimen name="space_75_dip">75dip</dimen>
+    <dimen name="space_76_dip">76dip</dimen>
+    <dimen name="space_80_dip">80dip</dimen>
+    <dimen name="space_90_dip">90dip</dimen>
+    <dimen name="space_100_dip">100dip</dimen>
+    <dimen name="space_120_dip">120dip</dimen>
+    <dimen name="space_125_dip">125dip</dimen>
+    <dimen name="space_130_dip">130dip</dimen>
+    <dimen name="space_150_dip">150dip</dimen>
+    <dimen name="space_160_dip">160dip</dimen>
+    <dimen name="space_170_dip">170dip</dimen>
+    <dimen name="space_180_dip">180dip</dimen>
+    <dimen name="space_200_dip">200dip</dimen>
+    <dimen name="space_220_dip">220dip</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_size_mini">8sp</dimen>
+    <dimen name="text_size_smallest">9sp</dimen>
+    <dimen name="text_size_smaller">10sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_larger">18sp</dimen>
+    <dimen name="text_size_largest">19sp</dimen>
+    <dimen name="text_size_big">20sp</dimen>
+
+    <dimen name="popup_window_vertical_offset">0dip</dimen>
+    <dimen name="popup_window_horizontal_offset">-7dip</dimen>
+    <dimen name="popup_list_item_height">40dip</dimen>
+    <dimen name="navigation_drawer_width">250dip</dimen>
+    <dimen name="text_size_splash_screen">32sp</dimen>
+    <dimen name="nav_drawer_row_item_height">50dip</dimen>
+    <dimen name="nav_drawer_text_margin_left">68dip</dimen>
+    <dimen name="toolbar_logo_dimen">55dip</dimen>
+    <dimen name="authentication_screen_text_size">22sp</dimen>
+    <dimen name="spinner_vertical_offset">0dip</dimen>
+    <dimen name="space_56_dip">56dip</dimen>
+    <dimen name="states_popup_list_item_height">20dip</dimen>
+    <dimen name="divider_height">0.5dip</dimen>
+
+    <!--cardslib-->
+    <dimen name="card_expand_native_simple_title_text_size">25sp</dimen>
+    <dimen name="card_expand_simple_title_text_size">21sp</dimen>
+    <dimen name="card_base_empty_height">0dp</dimen>
+    <dimen name="space_320_dip">320dip</dimen>
+    <dimen name="space_420_dip">420dip</dimen>
+    <dimen name="space_140_dip">140dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dim_256_dip">256dip</dimen>
+    <dimen name="space_0_dip">0dip</dimen>
+    <dimen name="space_45_dip">45dp</dimen>
+
+    <dimen name="activity_padding_horizontal">16dp</dimen>
+    <dimen name="padd_10">10dp</dimen>
+    <dimen name="ic_delete">30dp</dimen>
+    <dimen name="thumbnail">90dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="space_300_dip">300dp</dimen>
+</resources>

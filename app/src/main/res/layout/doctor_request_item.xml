@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_margin="15dp"
+            >
+            <TextView
+                android:id="@+id/request_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00ffffff"
+                android:ems="10"
+                android:layout_marginLeft="@dimen/space_10_dip"
+                android:layout_marginRight="@dimen/space_10_dip"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/request_note"
+                android:backgroundTint="#00ffffff"
+                android:ems="10"
+                android:layout_marginLeft="@dimen/space_10_dip"
+                android:layout_marginRight="@dimen/space_10_dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Big problem"
+                android:textSize="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/request_call"
+                    android:text="Call"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00ffffff"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/request_location"
+                    android:text="Location"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00ffffff"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"  />
+                <Button
+                    android:id="@+id/request_accept"
+                    android:text="Accept"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#00ffffff"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

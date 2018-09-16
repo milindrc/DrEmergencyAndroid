@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.matrixdev.dremergency.Controllers.Dashboard.DoctorDashboard">
+    <!-- The main content view -->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dashboard">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/id_toolbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/white_color"
+                    app:layout_collapseMode="pin"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Toolbar Title"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.Toolbar>
+
+
+                <ImageView
+                    android:id="@+id/nav_drawer_button"
+                    android:layout_width="@dimen/space_30_dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_5_dip"
+                    android:clickable="true"
+                    android:elevation="@dimen/space_3_dip"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:paddingBottom="@dimen/space_15_dip"
+                    android:paddingLeft="@dimen/space_10_dip"
+                    android:paddingRight="@dimen/space_10_dip"
+                    android:paddingTop="@dimen/space_15_dip"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/menu2"
+                    android:tint="@color/grey_darker" />
+
+
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/id_toolbar_container">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/id_appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark">
+
+
+            </android.support.design.widget.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:paddingTop="@dimen/space_50_dip"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp">
+
+                        <RelativeLayout
+                            android:id="@+id/sos"
+                            android:elevation="@dimen/space_5_dip"
+                            android:layout_marginTop="@dimen/space_45_dip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/bvp_image"
+                            android:layout_centerHorizontal="true">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+
+                                android:layout_width="@dimen/space_150_dip"
+                                android:layout_height="@dimen/space_150_dip"
+                                android:src="@color/glow_red"
+                                app:civ_border_color="@color/black"
+                                app:civ_border_width="@dimen/space_2_dip" />
+
+                            <LinearLayout
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:text="SOS"
+                                    android:textColor="@color/white_color"
+                                    android:textSize="25sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:textColor="@color/white_color"
+                                    android:gravity="center"
+                                    android:text="Request doctors\n nearby"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:background="@drawable/clean_border_white"
+                        android:layout_gravity="center"
+                        android:textSize="25sp"
+                        android:padding="@dimen/space_7_dip"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/space_20_dip"
+                        android:text="Common Emergencies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        android:id="@+id/card_refresh"
+                        android:elevation="@dimen/space_5_dip"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/card_tiles"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/sliding_feeds"
+                            android:layout_gravity="center"
+                            android:clipToPadding="false"
+                            android:paddingLeft="@dimen/space_10_dip"
+                            android:paddingRight="@dimen/space_10_dip"
+                            android:paddingTop="@dimen/space_15_dip"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                            >
+
+                        </android.support.v7.widget.RecyclerView>
+                    </android.support.v4.widget.SwipeRefreshLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+    </RelativeLayout>
+    <!-- The navigation drawer -->
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/translucent_black"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1dp" />
+
+
+</android.support.v4.widget.DrawerLayout>

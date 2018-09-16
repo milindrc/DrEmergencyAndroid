@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        android:elevation="15dp"
+        android:padding="1dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tip_data"
+            android:text="1) lie down, putting their hands on their abdomen
+2) breathe in deeply through their nose, expanding their abdomen and letting the lungs fill with air
+3) hold their breath for a couple of seconds
+4) breathe out slowly through the mouth, emptying their lungs
+5) repeat this pattern for 5 to 10 minutes
+This exercise can be done several times a day, or as often as the individual experiences shortness of breath. It is best to keep breathing slowly and easily, and deeply rather than quickly."
+
+            android:ellipsize="none"
+            android:maxLines="100"
+            android:padding="@dimen/space_5_dip"
+            android:scrollHorizontally="false"
+            android:backgroundTint="#00ffffff"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

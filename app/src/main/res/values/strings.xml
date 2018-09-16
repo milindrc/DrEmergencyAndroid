@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Dr.Emergency</string>
+    <string name="disclaimer_text1_register">By creating your account, you agree to the terms of Go Card Pro</string>
+    <string name="GoCardProTerms">Go Card Pro Terms of service and Honor Code.</string>
+    <string name="negativeResponseMessage">Network Connectivity issues</string>
+    <string name="error_field_required">Field Required</string>
+    <string name="error_invalid_email">Invalid Email</string>
+    <string name="error_invalid_password">Min 6 characters</string>
+    <string name="error_incorrect_phone_number">Invalid Mobile Number</string>
+    <string name="facebook_app_id">331805747356026</string>
+    <string name="fb_login_protocol_scheme">fb331805747356026</string>
+    <string name="AutoFillText">Category</string>
+    <string name="Name">Name :</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
